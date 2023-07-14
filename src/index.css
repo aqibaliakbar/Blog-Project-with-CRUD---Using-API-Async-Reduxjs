@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+  font-family: 'Roboto', sans-serif;
+  background-color:  rgb(247, 228, 180);
+  color: #27374D;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.5rem;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+  margin-bottom: 1em;
+  background-color: #27374D;
+}
+
+header {
+  padding: .5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #27374D;
+ color: rgb(247, 228, 180);
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+ 
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+nav ul li {
+margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+
+nav a, nav a:visited {
+  color:rgb(247, 228, 180);
+  text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 1900px;
+  margin: auto;
+}
+
+section {
+  margin-top: 1em;
+  
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content > * {
+  flex-basis: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  max-width: 25%;
+}
+
+@media (max-width: 1050px) {
+  .content > * {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content > * {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .content > * {
+    flex-basis: 90%;
+    max-width: 100%;
+  }
+}
+
+.form-content{
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+ 
+}
+
+.author{
+  color:rgb(247, 228, 180);
+}
+
+
+article {
+  margin: 0.5em;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 1em;
+  
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  font-size: 1.2rem;
+  margin: 0.5em 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  height: 200px;
+}
+
+.postCredit {
+  font-size: 1rem;
+}
+
+.postCredit a, 
+.postCredit a:visited {
+  margin-right: 0.5rem;
+  color: black;
+}
+
+.postCredit a:hover, 
+.postCredit a:focus {
+  color: hsla(0, 0%, 0%, 0.75);
+}
+
+.excerpt {
+  font-style: italic;
+}
+
+.reactionButton {
+  margin: 0 0.25em 0 0;
+  background: transparent;
+  border: none;
+  color: #000;
+  font-size: 1rem;
+}
+
+.deleteButton {
+  background-color: rgb(247, 228, 180);
+  color: #27374D;
+}
