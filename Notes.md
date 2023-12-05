@@ -1,3 +1,7 @@
+npm install
+npm start
+
+
 Our this blog project will supports all the crud operations where we can create delete update and delete blog posts.
 
 It will be a multi-page blog
